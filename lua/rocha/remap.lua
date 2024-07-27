@@ -9,8 +9,9 @@ vim.keymap.set("n", "<leader>vt", "<cmd>vert bo split +ter<CR>A")
 vim.keymap.set("n", "<leader>ht", "<cmd>hor bo split +ter<CR>A")
 
 -- Close the terminal
-vim.keymap.set("t", "<c-q>", function()  
+vim.keymap.set("t", "<c-k>", function()  
     if vim.o.buftype == 'terminal'
         then vim.cmd [[close]] 
     end
 end, { remap = true })
+
