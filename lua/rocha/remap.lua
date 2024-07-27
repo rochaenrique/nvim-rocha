@@ -15,3 +15,6 @@ vim.keymap.set("t", "<c-k>", function()
     end
 end, { remap = true })
 
+-- Switch to other window from the terminal
+vim.keymap.set("t", "<c-w>", "<c-\\><c-N><c-W>w", { remap = true })
+
