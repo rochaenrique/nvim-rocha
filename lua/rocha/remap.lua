@@ -3,10 +3,10 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>gl", vim.cmd.Ex)
 
 -- Open the terminal in new window (vertical)
-vim.keymap.set("n", "<leader>vt", "<cmd>vert bo split +ter<CR>A")
+vim.keymap.set("n", "<leader>vt", "<cmd>vert bo 82 split +ter<CR>Acls<Enter>")
 
 -- Open the terminal in new window (horizontal)
-vim.keymap.set("n", "<leader>ht", "<cmd>hor bo split +ter<CR>A")
+vim.keymap.set("n", "<leader>ht", "<cmd>hor bo 12 split +ter<CR>Acls<Enter>")
 
 -- Close the terminal
 vim.keymap.set("t", "<c-k>", function()  

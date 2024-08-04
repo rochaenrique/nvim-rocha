@@ -15,10 +15,13 @@ return require('packer').startup(function(use)
 
 	-- Color scheme 
 
-	use { 
-		"catppuccin/nvim", 
-		as = "catppuccin"  
-	}
+   
+	--use { 
+	--	"catppuccin/nvim", 
+	--	as = "catppuccin"  
+	--}
+
+    use "rebelot/kanagawa.nvim"
 
 	use('nvim-treesitter/nvim-treesitter', { as = ':TSUpdate'})
 
