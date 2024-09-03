@@ -13,8 +13,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	-- Color scheme 
-
+	-- ============== Color scheme ==============
    
 	--use { 
 	--	"catppuccin/nvim", 
