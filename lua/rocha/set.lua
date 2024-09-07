@@ -12,7 +12,6 @@ vim.opt.wrap = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+-- vim.opt.termguicolors = false
 
-vim.opt.guicursor = "n-v-c-sm-i:block,ci-ve:ver25,r-cr-o:hor20"
-
-vim.g.mapleader = ' ' 
+vim.g.mapleader = " " 
