@@ -13,17 +13,18 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	-- ============== Color scheme ==============
-   
+-- ============== COLOR SCHEME ==============
 	--use { 
 	--	"catppuccin/nvim", 
 	--	as = "catppuccin"  
 	--}
-
     use "rebelot/kanagawa.nvim"
 
+-- ============== TREESITTER  ==============
+	--use { 
 	use('nvim-treesitter/nvim-treesitter', { as = ':TSUpdate'})
 
+-- ============== LSP-CONFIG  ==============
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
