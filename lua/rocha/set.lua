@@ -18,3 +18,4 @@ vim.opt.incsearch = true
 vim.opt.guicursor = "n-v-c-sm-i-ci-ve-sm:block,r-cr-o:hor20"
 
 vim.g.mapleader = " " 
+vim.g.netrw_banner = 0
