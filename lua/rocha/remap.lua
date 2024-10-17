@@ -21,3 +21,10 @@ end, { remap = true })
 -- Switch to other window from the terminal
 vim.keymap.set("t", "<c-w>", "<c-\\><c-N><c-W>w", { remap = true })
 
+--jdtls stuff
+vim.keymap.set("n", "<A-o>", function() require'jdtls'.organize_imports() end)
+vim.keymap.set("n", "crv", function() require('jdtls').extract_variable() end)
+vim.keymap.set("v", "crv", function() require('jdtls').extract_variable(true) end)
+vim.keymap.set("n", "crc", function() require('jdtls').extract_constant() end)
+vim.keymap.set("v", "crc", function() require('jdtls').extract_constant(true) end)
+vim.keymap.set("v", "crm", function() require('jdtls').extract_method(true) end)
