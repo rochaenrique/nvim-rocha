@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
             }
 
             use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+            use "tpope/vim-fugitive" 
             use {
                 "ThePrimeagen/harpoon",
                 branch = "harpoon2",
