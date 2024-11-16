@@ -15,41 +15,35 @@ return require('packer').startup(function(use)
 
     use 'mfussenegger/nvim-jdtls'
 
-    -- ============== COLOR SCHEME ==============
-    --use { 
-        --	"catppuccin/nvim", 
-        --	as = "catppuccin"  
-        --}
-        --use "rebelot/kanagawa.nvim"
-        use { "rose-pine/neovim", as = "rose-pine" }
+    use 'mfussenegger/nvim-dap'
 
-        -- ============== TREESITTER  ==============
-        --use { 
-            use('nvim-treesitter/nvim-treesitter', { as = ':TSUpdate'})
+    --use { "rose-pine/neovim", as = "rose-pine" }
+    use "blazkowolf/gruber-darker.nvim"
 
-            -- ============== LSP-CONFIG  ==============
-            use {
-                'VonHeikemen/lsp-zero.nvim',
-                branch = 'v3.x',
-                requires = {
-                    --- Uncomment the two plugins below if you want to manage the language servers from neovim
-                    -- {'williamboman/mason.nvim'},
-                    -- {'williamboman/mason-lspconfig.nvim'},
+    use('nvim-treesitter/nvim-treesitter', { as = ':TSUpdate'})
 
-                    {'neovim/nvim-lspconfig'},
-                    {'hrsh7th/nvim-cmp'},
-                    {'hrsh7th/cmp-nvim-lsp'},
-                    {'L3MON4D3/LuaSnip'},
-                    {"williamboman/mason.nvim"},
-                    {"williamboman/mason-lspconfig.nvim"}
-                }
-            }
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x',
+        requires = {
+            --- Uncomment the two plugins below if you want to manage the language servers from neovim
+            -- {'williamboman/mason.nvim'},
 
-            use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
-            use "tpope/vim-fugitive" 
-            use {
-                "ThePrimeagen/harpoon",
-                branch = "harpoon2",
-                requires = { {"nvim-lua/plenary.nvim"} }
-            }
-        end)
+            {'neovim/nvim-lspconfig'},
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'L3MON4D3/LuaSnip'},
+            {"williamboman/mason.nvim"},
+            {'williamboman/mason-lspconfig.nvim'},
+            {"jvyyvnzobzna/znfba-yfcpbasvt.aivz"}
+        }
+    }
+
+    use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+    use "tpope/vim-fugitive" 
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
+    }
+end)
