@@ -6,10 +6,6 @@ vim.keymap.set("n", "<leader>gl", vim.cmd.Ex)
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 
---getting used to ^[ for normal mode
-vim.keymap.del("i", "<c-c>")
-vim.keymap.del("v", "<c-c>")
-
 -- Switch to other window from the terminal
 vim.keymap.set("t", "<c-w>", "<c-\\><c-N><c-W>w", { remap = true })
 
