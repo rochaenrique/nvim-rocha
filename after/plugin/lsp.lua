@@ -1,4 +1,6 @@
 local lsp_zero = require('lsp-zero')
+local cmp = require('cmp');
+local cmp_action = lsp_zero.cmp_action();
 
 lsp_zero.on_attach(function(client, bufnr)
 	lsp_zero.default_keymaps({
@@ -6,6 +8,12 @@ lsp_zero.on_attach(function(client, bufnr)
         preserve_mappings = false
     })
 end)
+
+cmp.setup({
+    completion = { 
+        autocomplete = false
+    },
+})
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
