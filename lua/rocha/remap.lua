@@ -7,6 +7,15 @@ vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "[dt", function() require('rocha.diagnostic').toggle_diagnostic() end);
 
+-- telescope
+
+local tsbi = require('telescope.builtin')
+vim.keymap.set('n', '<leader>lf', tsbi.find_files)
+vim.keymap.set('n', '<leader>gf', tsbi.git_commits)
+vim.keymap.set('n', '<leader>fg', tsbi.live_grep)
+vim.keymap.set('n', '<leader>gs', tsbi.grep_string)
+vim.keymap.set('n', '<leader>fb', tsbi.buffers)
+
 -- dap config
 local dap = require('dap')
 vim.keymap.set('n', '<leader><C-b>', function() dap.continue() end)
