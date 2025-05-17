@@ -17,10 +17,11 @@ return require('packer').startup(function(use)
 
     use 'mfussenegger/nvim-dap'
 
---use 'mg979/vim-visual-multi'
+    -- use 'mg979/vim-visual-multi'
 
-    --use { "rose-pine/neovim", as = "rose-pine" }
-    use "blazkowolf/gruber-darker.nvim"
+    -- use { "rose-pine/neovim", as = "rose-pine" }
+    -- use "blazkowolf/gruber-darker.nvim"
+    use "rebelot/kanagawa.nvim"
 
     use('nvim-treesitter/nvim-treesitter', { as = ':TSUpdate'})
 
