@@ -8,7 +8,6 @@ vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "[dt", function() require('rocha.diagnostic').toggle_diagnostic() end);
 
 -- telescope
-
 local tsbi = require('telescope.builtin')
 vim.keymap.set('n', '<leader>lf', tsbi.find_files)
 vim.keymap.set('n', '<leader>gf', tsbi.git_commits)
